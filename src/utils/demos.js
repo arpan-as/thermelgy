@@ -6,7 +6,7 @@ export const userConfig = () => {
   .get('https://e1b700ba-5024-427d-bccd-b2d58c315be7.mock.pstmn.io/thermelgy/userconfig')
   .then(res => {
           console.log(res.data)
-          localStorage.setItem('user', JSON.stringify(res.data[1]))
+          localStorage.setItem('user', JSON.stringify(res.data[0]))
           return res.data
       }
   ).then(() => {

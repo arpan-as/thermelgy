@@ -29,7 +29,7 @@ class AuthForm extends React.Component {
       console.log("login");
       userConfig()
 
-      // this.props.history.push('/');
+      this.props.history.push('/dashboard');
     }
 
     if (this.isSignup) {
